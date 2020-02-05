@@ -1,0 +1,30 @@
+@import url(main.css);
+@import url(nav.css);
+.cat  {
+    position: relative;
+    width: 250px;
+    background-color: #fff ;
+    box-shadow: 8px 8px 0 #a7f8ed;
+    padding: 10px 10px;
+    margin-bottom: 30px;
+}
+
+.cat i {
+    font-size: 50px;
+    padding: 10px;
+}
+
+.cat h1 {
+    font-size: 25px;
+    font-weight: 700;
+}
+.cat h2 {
+    font-size: 20px;
+    font-weight: 700;
+}
+.cat.inf-sys a{
+    color: #000;
+}
+.cat.inf-sys:hover{
+    box-shadow: 4px 4px 0 #f17db2;
+}

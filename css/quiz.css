@@ -1,0 +1,103 @@
+@import url(main.css);
+@import url(nav.css);
+
+.cat-title, .result-section {
+    position: relative;
+    width: 250px;
+    background-color: #fff ;
+    box-shadow: 8px 8px 0 #a7f8ed;
+    padding: 10px 10px;
+    margin-bottom: 30px;
+    font-weight: 700;
+}
+
+.quiz-section {
+    min-height: 100vh;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .question{
+    font-size: 30px;
+    padding: 15px;
+  }
+  
+  .answers {
+    margin-bottom: 20px;
+    text-align: left;
+    display: inline-block;
+  }
+  
+  .answers label{
+    margin-bottom: 10px;
+  }
+
+  .quiz-nav{
+    margin-bottom: 30px; 
+    display: flex;
+    flex-direction: column;
+  }
+
+  .quiz-button {
+    margin: 15px;
+    border: 3px solid #a7f8ed;
+    background: transparent;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+    padding: 10px;
+    cursor: pointer;
+    outline: transparent;
+    box-shadow: 8px 8px 0 #cda9fc;
+    transition:background .25s ease, color .25s ease, box-shadow .15s ease;
+  }
+
+  .quiz-button:hover{
+    color: currentColor;
+    background: #f17db2;
+    box-shadow: 4px 4px 0 #f17db2
+  }
+
+  label {
+    cursor:pointer;
+  }
+
+  label:hover {
+    background:#DDD;
+  }
+
+  input:checked + label {
+    color: #f17db2;
+    font-weight: 700;
+  }
+
+  input[type="radio"] {
+    -webkit-appearance: radio;
+    
+  }
+
+  /* Question Transition */
+  .slide{
+    position: absolute;
+    left: 0px;
+    width: 100%;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 0.5s;
+  }
+  .active-slide{
+    opacity: 1;
+    z-index: 2;
+  }
+  .quiz-container{
+    position: relative;
+    width: 800px;
+    height: 200px;
+    margin-bottom: 40px;
+    background-color: #fff;
+    box-shadow: 8px 8px 0 #a7f8ed;
+    
+  }
