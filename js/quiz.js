@@ -90,7 +90,7 @@
       });
   
       // show number of correct answers out of total
-      resultsContainer.innerHTML = `${numCorrect} out of ${myQuestions.length}`;
+      resultsContainer.innerHTML = `${numCorrect} от ${myQuestions.length}`;
     }
     
     //slide display
