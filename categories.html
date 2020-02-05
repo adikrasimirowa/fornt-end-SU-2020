@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" type="image/x-icon" href="images/1580492476.ico">
+    <script src="https://kit.fontawesome.com/233ffbdbf8.js" crossorigin="anonymous"></script>
+
+    <title>QuickyQuiz | Категории</title>
+    <link href="css/categories.css"  rel="stylesheet">
+</head>
+<body>
+    <header>
+        <img class="logo" src="images/logo1.png" alt="Logo">
+        <nav>
+            <a id="user-email"></a>
+            <a onclick="quizRedirect('categories')">Категории</a>
+            <a href="#" id="logout">Изход</a>
+        </nav>
+    </header>
+    <main class="wrapper">
+        <section class="cat">
+            <h1>КАТЕГОРИИ</h1>
+        </section>
+        <section class="cat">
+            <i class="fas fa-square-root-alt"></i>
+            <h2>ЛИНЕЙНА АЛГЕБРА</h2>
+            <h6>Oчаквайте скоро!</h6>
+        </section>
+        <section class="cat inf-sys">
+            <i class="fas fa-project-diagram"></i>
+            <h2 onclick="quizRedirect('quiz')">ИНФОРМАЦИОННИ СИСТЕМИ</h2>        
+        </section>
+        <section class="cat">
+            <i class="fas fa-hand-holding-usd"></i>
+            <h2>ИКОНОМИКА</h2>
+            <h6>Oчаквайте скоро!</h6>        
+        </section>
+        <section class="cat">
+            <i class="fas fa-landmark"></i>
+            <h2>ИСТОРИЯ</h2>
+            <h6>Oчаквайте скоро!</h6>       
+        </section>
+        
+    </main>
+    <footer>
+        QuickyQuiz 2020  | Created by Adelina Todorova 
+    </footer>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+        <script src="https://www.gstatic.com/firebasejs/7.8.0/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use https://firebase.google.com/docs/web/setup#available-libraries -->
+        <script defer src="https://www.gstatic.com/firebasejs/7.8.0/firebase-auth.js"></script>
+        <script defer src="https://www.gstatic.com/firebasejs/7.8.0/firebase-firestore.js"></script>     
+ 
+        <script>
+             // Your web app's Firebase configuration
+            var firebaseConfig = {
+                apiKey: "AIzaSyBX1wal0biDETzRAhUl6FBser3K2IbRPfA",
+                authDomain: "quickyquiz-41b75.firebaseapp.com",
+                databaseURL: "https://quickyquiz-41b75.firebaseio.com",
+                projectId: "quickyquiz-41b75",
+                storageBucket: "quickyquiz-41b75.appspot.com",
+                messagingSenderId: "308468637109",
+                appId: "1:308468637109:web:0f0382b26c8a8f2bbacdfc",
+                measurementId: "G-51EZ5Z44YV"
+            };
+            // Initialize Firebase
+            firebase.initializeApp(firebaseConfig);
+        </script>
+        <script src="js/auth.js"></script>
+        <script src="js/redirect.js"></script>
+
+</body>
+</html>
